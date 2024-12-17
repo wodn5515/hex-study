@@ -1,0 +1,201 @@
+{
+  "python.autoComplete.extraPaths": ["apps"],
+  "editor.minimap.enabled": true,
+  "editor.scrollBeyondLastLine": false,
+  "files.insertFinalNewline": true,
+  "editor.rulers": [120],
+  "search.smartCase": true,
+  "[django-html]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "editor.showUnused": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.flake8Args": [
+    "--max-line-length=120",
+    "--exclude=*/__init__.py"
+  ],
+  "python.sortImports.args": ["--multi-line=3", "--line-length=120"],
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.formatOnPaste": false,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "unibeautify.defaultConfig": ".unibeautifyrc.json",
+  "editor.formatOnSave": true,
+  "beautify.language": {
+    "html": {
+      "type": ["html", "django-html"]
+    },
+    "js": {
+      "type": ["javascript", "json"],
+      "filename": [".jsbeautifyrc"]
+    }
+  },
+  "python.formatting.provider": "black",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.py[co]": true,
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.idea": true,
+    "**/.vscode": false,
+    "**/yarn.lock": true,
+    "**/tmp": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.git": false,
+    "**/.DS_Store": true,
+    "**/tmp": true,
+    "**/coverage": true,
+    "**/build": true,
+    "**/Pods": true,
+    "**/*.xcodeproj": true,
+    "**/*.xcworkspace": true
+  },
+  "files.associations": {
+    "**/*.html": "html",
+    "**/templates/**/*.html": "django-html",
+    "**/templates/**/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "editor.tokenColorCustomizations": {
+    "[Darcula Pycharm with Dark GUI]": {
+      "textMateRules": [
+        {
+          "scope": ["entity.other.attribute-name"],
+          "settings": {
+            "foreground": "#BABABA"
+          }
+        },
+        {
+          "scope": [
+            "text.html.jinja entity.other.jinja.delimiter.variable",
+            "text.html.jinja entity.other.jinja.delimiter.tag"
+          ],
+          "settings": {
+            "foreground": "#A9B7C6"
+          }
+        },
+        {
+          "scope": [
+            "text.html.jinja keyword.control",
+            "text.html meta.tag entity.name.tag",
+            "text.html punctuation.definition.tag.begin",
+            "text.html punctuation.definition.tag.end"
+          ],
+          "settings": {
+            "foreground": "#E8BF6A"
+          }
+        },
+        {
+          "scope": [
+            "text.html meta.tag punctuation",
+            "text.html meta.tag string.unquoted",
+            "text.html meta.tag string.quoted"
+          ],
+          "settings": {
+            "foreground": "#A5C261"
+          }
+        },
+        {
+          "scope": ["comment.line"],
+          "settings": {
+            "foreground": "#E7EC95"
+          }
+        }
+      ]
+    }
+  },
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)",
+    "django-html"
+  ],
+  "explorer.confirmDelete": false,
+  "workbench.tips.enabled": false,
+  "files.enableTrash": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "afterDelay",
+  "explorer.confirmDragAndDrop": false,
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "window.zoomLevel": 0,
+  "prettier.jsxSingleQuote": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.renderControlCharacters": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.colorTheme": "Default Dark+",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "editor.multiCursorModifier": "alt",
+  "editor.columnSelection": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "beautify.config": "",
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": "'cv01', 'cv02', 'cv06', 'cv29', 'cv30', 'cv31'",
+  "python.analysis.extraPaths": ["apps"],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.mouseWheelZoom": true,
+  "editor.largeFileOptimizations": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "editor.cursorStyle": "block-outline",
+  "redhat.telemetry.enabled": true,
+  "gitlens.views.remotes.branches.layout": "list",
+  "diffEditor.renderSideBySide": false,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.accessibilitySupport": "off",
+  "workbench.editor.enablePreview": false,
+  "jupyter.interactiveWindow.textEditor.executeSelection": false
+}
