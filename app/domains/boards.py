@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from app.community.domains.identifiers import BoardId
-from app.community.domains.common import Level
+from app.domains.identifiers import BoardId
+from app.domains.common import Level
 
 
 @dataclass
