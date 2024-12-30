@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from app.domains.identifiers import UserId, BoardId
+from myapp.domains.identifiers import UserId, BoardId
 
 
 class WritePostResult:

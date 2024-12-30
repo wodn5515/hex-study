@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import Optional
-from app.domains.identifiers import UserId, BoardId, PostId
-from app.domains.common import Level
-from app.domains.boards import Board
-from app.domains.results.posts import (
+from myapp.domains.identifiers import UserId, BoardId, PostId
+from myapp.domains.common import Level
+from myapp.domains.boards import Board
+from myapp.domains.results.posts import (
     WritePostResult,
     TitleLengthExceededLimitResult,
     AuthorLevelPermissionDeniedResult,

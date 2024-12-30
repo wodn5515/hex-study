@@ -1,6 +1,6 @@
 from typing import Protocol
-from app.domains.identifiers import BoardId
-from app.domains.boards import Board
+from myapp.domains.identifiers import BoardId
+from myapp.domains.boards import Board
 
 
 class FindBoardPort(Protocol):

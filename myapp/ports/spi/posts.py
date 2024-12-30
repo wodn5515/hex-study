@@ -1,5 +1,5 @@
 from typing import Protocol
-from app.domains.posts import Post
+from myapp.domains.posts import Post
 
 
 class SavePostPort(Protocol):
