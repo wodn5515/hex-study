@@ -2,7 +2,7 @@ from myapp.adapters.spi.models.abstracts import TimeStampedModel
 from django.db import models
 
 
-class Board(TimeStampedModel):
+class BoardEntity(TimeStampedModel):
     name = models.TextField()
     level = models.IntegerField()
 
@@ -10,8 +10,8 @@ class Board(TimeStampedModel):
         db_table = "boards"
 
 
-class Post(TimeStampedModel):
-    board = models.ForeignKey("myapp.Board", on_delete=models.PROTECT)
+class PostEntity(TimeStampedModel):
+    board = models.ForeignKey("myapp.BoardEntity", on_delete=models.PROTECT)
     author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
     title = models.CharField(max_length=256)
     content = models.TextField()
