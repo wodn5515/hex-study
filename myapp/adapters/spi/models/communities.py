@@ -12,10 +12,14 @@ class BoardEntity(TimeStampedModel):
 
 class PostEntity(TimeStampedModel):
     board = models.ForeignKey("myapp.BoardEntity", on_delete=models.PROTECT)
-    author = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    author = models.ForeignKey("myapp.AuthorEntity", on_delete=models.CASCADE)
     title = models.CharField(max_length=256)
     content = models.TextField()
 
     class Meta:
         db_table = "posts"
 
+
+class AuthorEntity(TimeStampedModel):
+    user = models.OneToOneField("myapp.User", on_delete=models.PROTECT)
+    level = models.PositiveIntegerField()
