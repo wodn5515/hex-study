@@ -21,5 +21,5 @@ class PostEntity(TimeStampedModel):
 
 
 class AuthorEntity(TimeStampedModel):
-    user = models.OneToOneField("myapp.User", on_delete=models.PROTECT)
+    user = models.OneToOneField("myapp.UserEntity", on_delete=models.PROTECT, related_name="author")
     level = models.PositiveIntegerField()

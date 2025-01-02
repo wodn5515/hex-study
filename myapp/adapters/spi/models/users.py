@@ -30,7 +30,7 @@ class UserManager(BaseUserManager):
         return user
 
 
-class User(AbstractBaseUser,PermissionsMixin):
+class UserEntity(AbstractBaseUser,PermissionsMixin):
     objects = UserManager()
 
     email = models.EmailField(
