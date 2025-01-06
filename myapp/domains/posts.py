@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
 from myapp.domains.identifiers import UserId, BoardId, PostId
-from myapp.domains.common import Level
+from myapp.domains.common import Level, Dt
 from myapp.domains.boards import Board
 from myapp.domains.results.posts import (
     WritePostResult,
@@ -16,6 +16,8 @@ TITLE_LENGTH_LIMIT = 50
 @dataclass
 class Post:
     id: Optional[PostId] = None
+    created_at: Optional[Dt] = None
+    updated_at: Optional[Dt] = None
     title: str
     content: str
     author_id: UserId
